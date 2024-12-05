@@ -1,4 +1,4 @@
-import React from "react";
+import './App.css';
 import { BrowserRouter as Router, Routes, Route, useNavigate} from "react-router-dom";
 
 function HomePage() {
@@ -45,7 +45,7 @@ function AboutRouteButton() {
 function HomeRouteButton() {
   const navigate = useNavigate();
   return (
-    <button onClick={() => navigate("/home")}>
+    <button onClick={() => navigate("/")}>
       Home
     </button>
   );
@@ -59,6 +59,7 @@ function PicturesRouteButton() {
     </button>
   );
 }
+
 
 function App() {
   return (
